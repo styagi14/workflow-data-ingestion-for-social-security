@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/applicantdb
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/applicant_files
+
+server:
+  port: 8080
+
+app:
+  gridfs:
+    bucket: attachments
