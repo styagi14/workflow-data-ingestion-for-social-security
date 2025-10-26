@@ -20,4 +20,11 @@ git clone https://github.com/styagi14/workflow-data-ingestion-for-social-securit
 # Go into the project folder
 cd workflow-data-ingestion-for-social-security
 
-# Run the code 
+## Steps to run the code 
+- First run the docker-compose file to make postgresql and mongodb running local on your machine
+- Run the spring boot rest project using java -jar workflow-data-ingestion-1.0-SNAPSHOT.jar
+- Go to azure postal and create ADF workspace and create Linked Services, Data Sets to postgresql and mongodb and ADLS Gen2.
+- Once we have data in ADLS Gen2, This is a raw formated data.
+- We joined the user data and attachment and cleaned the data, joined and transformed the data.
+- Next we need to create delta tables on top of it.
+- Next we applied 
